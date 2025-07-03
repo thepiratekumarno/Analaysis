@@ -5,6 +5,10 @@ import re
 
 app = FastAPI()
 
+origins = [
+    "https://analaysis-frontend.onrender.com"
+     # Keep for local testing
+]
 # Enable CORS for GitHub Pages frontend
 app.add_middleware(
     CORSMiddleware,
