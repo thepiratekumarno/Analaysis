@@ -138,7 +138,7 @@
             fetch(`https://api.github.com/repos/${owner}/${repo}/contributors`, { headers }),
             fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=20`, { headers }),
             fetch(`https://api.github.com/repos/${owner}/${repo}/languages`, { headers }),
-            fetch(`http://localhost:5500/github/${owner}/${repo}/branch-commits${queryToken}`)
+            fetch(`https://analaysis-backend.onrender.com/github/${owner}/${repo}/branch-commits${queryToken}`)
           ]);
 
           if (!repoData.ok) {
