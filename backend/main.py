@@ -12,7 +12,7 @@ origins = [
 # Enable CORS for GitHub Pages frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For better security: replace "*" with "https://yourusername.github.io"
+    allow_origins=origins,  # For better security: replace "*" with "https://yourusername.github.io"
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
