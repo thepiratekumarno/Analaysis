@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-gunicorn
-requests
-python-multipart
-aiofiles
